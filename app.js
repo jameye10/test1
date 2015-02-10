@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('tutorialApp', [tutorials-things]);
 
-  app.controller('TutorialController', ['$http', function($http){
+  app.controller('TutorialsController', ['$http', function($http){
 	var tutorials = this;
 	tutorials.things = [];
 	

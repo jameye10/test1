@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="tutorialApp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+ <body ng-controller="tutorialController as tutorials">
+    <!--  Store Header  -->
+    <header>
+      <h1 class="text-center">Assignment 6</h1>
+    </header>
+	
+	<div class="list-group-item" ng-repeat="thing in tutorials.things">
+	<h3>
+	{{ things.title }}
+	</h3>
+	
+	<!--  Url Tab's Content  -->
+		<div>
+		<h4>Url</h4>
+		<blockquote>{{things.url}}</blockquote>
+		</div>
+		
+		<!--  Title Tab's Content  -->
+		<div>
+		<h4>Title</h4>
+		<blockquote>{{things.title}}</blockquote>
+		</div>
+	
+	</div>
+	
+	
+	
+  </body>
+</html>
+

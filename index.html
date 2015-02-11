@@ -15,19 +15,19 @@
 	
 	<div class="list-group-item" ng-repeat="thing in tutorials.things">
 	<h3>
-	{{ things.title }}
+	{{ thing.title }}
 	</h3>
 	
 	<!--  Url Tab's Content  -->
 		<div>
 		<h4>Url</h4>
-		<blockquote>{{things.url}}</blockquote>
+		<blockquote>{{ thing.url }}</blockquote>
 		</div>
 		
 		<!--  Title Tab's Content  -->
 		<div>
 		<h4>Title</h4>
-		<blockquote>{{things.title}}</blockquote>
+		<blockquote>{{ thing.title }}</blockquote>
 		</div>
 	
 	</div>
